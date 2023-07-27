@@ -1,0 +1,8 @@
+{
+    "session_nums": 2,
+    "eth_name": "slnic0",
+    "sessions": [{"dst_ip": "239.8.8.8","dst_port": 12581},
+                 {"dst_ip": "239.8.8.9","dst_port": 12581}],
+    "cpu_nums": 2,
+    "cpu_arrays": [7,9]
+}

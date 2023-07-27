@@ -1,0 +1,160 @@
+{
+    "traderType":"CTP",
+    "mdType":"CTP",
+    "buyStrategyType":"SHFE",
+    "mdDCE1":{
+        "title":"dcel2_5662",
+        "pidfile":"nhmdrecv_dcel2_5672.pid",
+        "type":5,
+        "port":5662,
+        "multicast_addr":"239.50.11.3",
+        "source_addr":"10.50.70.20",
+        "local_addr":"10.50.11.47",
+        "forward_addr":"192.168.0.170",
+        "cpuid":1,
+        "sleeptime":500000,
+        "datdir":"decl2_5672_dat"
+    },
+    "mdDCE2":{
+        "title":"shfe_10170",
+        "pidfile":"nhmdrecv_dcel2_5672.pid",
+        "type":5,
+        "port":5662,
+        "multicast_addr":"239.50.11.3",
+        "source_addr":"10.50.70.20",
+        "local_addr":"10.50.11.47",
+        "forward_addr":"192.168.0.170",
+        "cpuid":1,
+        "sleeptime":500000,
+        "datdir":"decl2_5672_dat"
+    },
+    "mdSHFE1":{
+        "title":"shfel2_32200",
+        "pidfile":"slrecv_shfel2_32200.pid",
+        "type":5,
+        "port":32200,
+        "multicast_addr":"233.32.2.100",
+        "source_addr":"10.140.215.9",
+        "local_addr":"10.140.213.170",
+        "forward_addr":"192.168.0.177",
+        "cpuid":1,
+        "sleeptime":500000,
+        "datdir":"shfel2_32200_dat"
+    },
+    "mdSHFE2":{
+        "title":"dce_10170",
+        "pidfile":"nhmdrecv_dcel1.pid",
+        "type":0,
+        "port":4662,
+        "multicast_addr":"239.50.60.20",
+        "source_addr":"10.50.111.10",
+        "local_addr":"10.50.11.47",
+        "forward_addr":"0.0.0.0",
+        "cpuid":1,
+        "sleeptime":500000,
+        "datdir":"dcel1_dat"
+    },
+    "tdSHFE":{
+        "tradeServerIp":"10.72.163.180",
+        "tradeServerPort":19999,
+        "queryServerIp":"10.72.163.179",
+        "queryServerPort":20001,
+        "localIp":"10.72.163.160",
+        "localUDPPort":19998,
+        "logonId":"123456",
+        "logonPwd":"qwerty",
+        "account":"123456",
+        "localMac":"authcode",
+        "appId":"appid", 
+        "exchangeId":103
+    },
+    "tdDCE":{
+        "tradeServerIp":"172.42.13.223",
+        "tradeServerPort":19999,
+        "queryServerIp":"172.42.13.222",
+        "queryServerPort":20001,
+        "localIp":"172.42.13.92",
+        "localUDPPort":19998,
+        "logonId":"123456",
+        "logonPwd":"qwerty",
+        "account":"123456",
+        "localMac":"authcode",
+        "appId":"appid", 
+        "exchangeId":104
+    },
+    "exampleBuyStrategy":{
+        "instrument":"y2309",
+        "targetInventory":10,
+        "minPriceChange":2,
+        "multiplier":10
+    },
+    "tdCTP":{
+        "brokerID":"9999",
+        "userID":"212723",
+        "authCode":"0000000000000000",
+        "appID":"simnow_client_test",
+        "password":"password",
+        "exchangeID":"DCE",
+        "frontTdAddr":"tcp://180.168.146.187:10202"
+    },
+    "mdCTP":{
+        "frontMdAddr":"tcp://180.168.146.187:10212",
+        "brokerID":"9999",
+        "userID":"212723",
+        "instrumentIDs":["y2309"]
+    },
+    "mdDCEL1":{
+        "BaseInfoIP":"172.42.11.230",
+        "BaseInfoPort":12345,
+        "MCGroups":{
+            "MulticastIP":"239.30.1.1",
+            "BindAddr":"172.42.13.92"
+        },
+        "SnapshotPort":27001,
+        "L1Port":27301,
+        "L1NIC":"enp101s0f0"
+    },
+    "mdnPro":{
+        "nic_interface":"enp101s0",
+        "exchange_type":0,
+        "serverIP":"tcp://10.72.162.211:12345",
+        "if_restart_fpga":true,
+        "md_bind_cpu":4,
+        "license_filepath":"/root/nProPlus/license/nProPlus.license",
+        "instrumentIDs":["rb2310"]
+    },
+    "mdEES":{
+        "eqsId": " ",
+        "eqsIp": "175.170.135.24",
+        "Port": 30000,
+        "LoginId": "12600710",
+        "Password": "xyz123",
+        "IntrumentType": 6,
+        "pSymbol": ["i2309","m2309"]
+    },
+    "mdEFHL2":{
+        "session_nums": 2,
+        "eth_name": "slnic0",
+        "sessions": [{"dst_ip": "239.8.8.8","dst_port": 12581},
+                     {"dst_ip": "239.8.8.9","dst_port": 12581}],
+        "cpu_nums": 2,
+        "cpu_arrays": [7,9]
+    },
+    "mdDFITC":{
+        "l1_tcp_addr": "XXX.XXX.XXX.XXX:XXXX",
+        "l1_udp_addr_1": "XXX.XXX.XXX.XXX:XXXX,local_ip",
+        "l1_udp_addr_2": "XXX.XXX.XXX.XXX:XXXX,local_ip",
+        "ln_tcp_addr": "XXX.XXX.XXX.XXX:XXXX",
+        "ln_udp_addr_1": "XXX.XXX.XXX.XXX:XXXX,local_ip",
+        "ln_udp_addr_2": "XXX.XXX.XXX.XXX:XXXX,local_ip",
+        "log_level": 1,
+        "timeout_ms": 30000,
+        "heart_interval_ms": 5000,
+        "heart_max_failed": 6,
+        "reconnect_max_times": 5,
+        "cache_win": 2000,
+        "cache_size": 10000,
+        "trader_id": "XXXXXXXX",
+        "passwd": "88888888"
+    }
+}

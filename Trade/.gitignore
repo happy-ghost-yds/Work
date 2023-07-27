@@ -1,0 +1,15 @@
+# CTP stream files
+*.con
+
+# logs
+logs/
+
+# compiled files
+libuv.pc
+libuv.so
+libuv.so.1
+libuv.so.1.0.0
+
+# configs
+*.cfg
+example
